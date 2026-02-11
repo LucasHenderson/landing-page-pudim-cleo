@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pudim da Cleo — Feito com Amor e Tradição</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="images/logo-pudim.webp" alt="Pudim da Cleo" class="nav-logo-img">
+        <span class="nav-brand">Pudim da Cleo</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#brands">Qualidade</a></li>
+        <li><a href="#pricing">Preços</a></li>
+        <li><a href="#order" class="nav-cta">Pedir Agora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrapper" data-animate="fade-up">
+        <img src="images/logo-pudim.webp" alt="Pudim da Cleo" class="hero-logo">
+      </div>
+      <h1 class="hero-title" data-animate="fade-up" data-delay="200">
+        Pudim da <span class="text-gold">Cleo</span>
+      </h1>
+      <p class="hero-subtitle" data-animate="fade-up" data-delay="400">
+        Tradição, sabor e carinho em cada fatia.<br>
+        O verdadeiro pudim caseiro feito com os melhores ingredientes.
+      </p>
+      <div class="hero-actions" data-animate="fade-up" data-delay="600">
+        <a href="#products" class="btn btn-primary">Conheça Nossos Sabores</a>
+        <a href="#order" class="btn btn-outline">Faça Seu Pedido</a>
+      </div>
+      <div class="hero-scroll-indicator" data-animate="fade-up" data-delay="800">
+        <span>Deslize para conhecer</span>
+        <div class="scroll-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative floating elements -->
+    <div class="hero-decor hero-decor-1"></div>
+    <div class="hero-decor hero-decor-2"></div>
+    <div class="hero-decor hero-decor-3"></div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-animate="fade-right">
+          <div class="about-image-frame">
+            <div class="about-illustration">
+              <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="150" cy="260" rx="120" ry="20" fill="#D4A04A" opacity="0.15"/>
+                <path d="M60 160 C60 100, 240 100, 240 160 L240 220 C240 250, 60 250, 60 220 Z" fill="url(#pudimGrad)" stroke="#C8891E" stroke-width="2"/>
+                <path d="M60 160 C60 130, 240 130, 240 160 C240 180, 60 180, 60 160Z" fill="#F5D69C" opacity="0.4"/>
+                <path d="M55 155 C55 145, 245 145, 245 155 L248 160 C248 165, 52 165, 55 160 Z" fill="#C8891E"/>
+                <path d="M70 95 C70 75, 230 75, 230 95 L240 155 C240 155, 60 155, 60 155 Z" fill="url(#caramelGrad)" stroke="#A06B15" stroke-width="1.5"/>
+                <path d="M70 95 C70 75, 230 75, 230 95 C230 110, 70 110, 70 95Z" fill="#E8B94A" opacity="0.5"/>
+                <ellipse cx="150" cy="88" rx="78" ry="16" fill="#F0D080" opacity="0.3"/>
+                <!-- Caramel drip -->
+                <path d="M90 155 Q88 175, 92 185 Q95 190, 92 195" stroke="#A06B15" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M200 155 Q204 170, 200 180" stroke="#A06B15" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M145 155 Q142 180, 148 200 Q150 205, 146 210" stroke="#A06B15" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <!-- Steam -->
+                <path d="M120 70 Q115 50, 125 35" stroke="#C8891E" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round">
+                  <animate attributeName="d" values="M120 70 Q115 50, 125 35;M120 70 Q125 45, 118 30;M120 70 Q115 50, 125 35" dur="3s" repeatCount="indefinite"/>
+                </path>
+                <path d="M155 65 Q150 45, 160 28" stroke="#C8891E" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round">
+                  <animate attributeName="d" values="M155 65 Q150 45, 160 28;M155 65 Q160 40, 152 25;M155 65 Q150 45, 160 28" dur="3.5s" repeatCount="indefinite"/>
+                </path>
+                <path d="M185 68 Q180 48, 190 33" stroke="#C8891E" stroke-width="2" fill="none" opacity="0.2" stroke-linecap="round">
+                  <animate attributeName="d" values="M185 68 Q180 48, 190 33;M185 68 Q190 42, 182 28;M185 68 Q180 48, 190 33" dur="4s" repeatCount="indefinite"/>
+                </path>
+                <defs>
+                  <linearGradient id="pudimGrad" x1="150" y1="100" x2="150" y2="250">
+                    <stop offset="0%" stop-color="#F5E0A0"/>
+                    <stop offset="100%" stop-color="#E8C86A"/>
+                  </linearGradient>
+                  <linearGradient id="caramelGrad" x1="150" y1="75" x2="150" y2="160">
+                    <stop offset="0%" stop-color="#D4A04A"/>
+                    <stop offset="100%" stop-color="#A06B15"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about-text" data-animate="fade-left">
+          <span class="section-tag">Nossa História</span>
+          <h2 class="section-title">Feito com amor,<br>servido com <span class="text-gold">carinho</span></h2>
+          <p class="about-description">
+            A <strong>Pudim da Cleo</strong> nasceu da paixão por fazer o pudim perfeito — cremoso, 
+            com a calda dourada na medida certa e aquele sabor que lembra a casa da avó. 
+            Cada pudim é preparado artesanalmente com ingredientes selecionados das melhores marcas do mercado, 
+            garantindo uma experiência única a cada mordida.
+          </p>
+          <p class="about-description">
+            Nosso compromisso é entregar <strong>qualidade</strong>, <strong>frescor</strong> e 
+            <strong>muito sabor</strong> em cada encomenda. Seja para uma sobremesa especial, 
+            um evento ou simplesmente para adoçar o seu dia.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Pudins vendidos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Artesanal</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Sabores deliciosos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Cardápio</span>
+        <h2 class="section-title">Nossos <span class="text-gold">Sabores</span></h2>
+        <p class="section-desc">Cada sabor, uma experiência inesquecível</p>
+      </div>
+      <div class="products-grid">
+        <!-- Pudim Tradicional -->
+        <div class="product-card" data-animate="fade-up" data-delay="100">
+          <div class="product-image-wrapper">
+            <div class="product-badge">Mais Vendido</div>
+            <div class="product-image product-img-tradicional">
+              <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="140" cy="140" r="130" fill="#FFF8EC"/>
+                <ellipse cx="140" cy="210" rx="80" ry="12" fill="#D4A04A" opacity="0.15"/>
+                <path d="M75 130 C75 90, 205 90, 205 130 L205 175 C205 195, 75 195, 75 175 Z" fill="url(#pt1)" stroke="#C8891E" stroke-width="1.5"/>
+                <path d="M75 130 C75 110, 205 110, 205 130 C205 145, 75 145, 75 130Z" fill="#F5D69C" opacity="0.4"/>
+                <path d="M72 127 C72 120, 208 120, 208 127 L210 132 C210 135, 70 135, 72 132 Z" fill="#C8891E"/>
+                <path d="M82 78 C82 62, 198 62, 198 78 L205 127 C205 127, 75 127, 75 127 Z" fill="url(#ct1)" stroke="#A06B15" stroke-width="1"/>
+                <path d="M82 78 C82 62, 198 62, 198 78 C198 90, 82 90, 82 78Z" fill="#E8B94A" opacity="0.5"/>
+                <path d="M100 127 Q98 145, 102 152" stroke="#A06B15" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M170 127 Q173 140, 170 148" stroke="#A06B15" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M135 127 Q132 150, 138 165 Q140 168, 137 172" stroke="#A06B15" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <defs>
+                  <linearGradient id="pt1" x1="140" y1="90" x2="140" y2="195"><stop offset="0%" stop-color="#F5E0A0"/><stop offset="100%" stop-color="#E8C86A"/></linearGradient>
+                  <linearGradient id="ct1" x1="140" y1="62" x2="140" y2="127"><stop offset="0%" stop-color="#D4A04A"/><stop offset="100%" stop-color="#A06B15"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Pudim Tradicional</h3>
+            <p class="product-desc">O clássico pudim de leite condensado com calda de caramelo. Cremoso, firme e irresistível — uma receita que conquista a todos.</p>
+            <div class="product-sizes">
+              <span class="size-tag">500g</span>
+              <span class="size-tag">1,1kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pudim de Café -->
+        <div class="product-card" data-animate="fade-up" data-delay="300">
+          <div class="product-image-wrapper">
+            <div class="product-badge badge-new">Novidade</div>
+            <div class="product-image product-img-cafe">
+              <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="140" cy="140" r="130" fill="#FFF8EC"/>
+                <ellipse cx="140" cy="210" rx="80" ry="12" fill="#6B3A1F" opacity="0.15"/>
+                <path d="M75 130 C75 90, 205 90, 205 130 L205 175 C205 195, 75 195, 75 175 Z" fill="url(#pc1)" stroke="#6B3A1F" stroke-width="1.5"/>
+                <path d="M75 130 C75 110, 205 110, 205 130 C205 145, 75 145, 75 130Z" fill="#C4956A" opacity="0.35"/>
+                <path d="M72 127 C72 120, 208 120, 208 127 L210 132 C210 135, 70 135, 72 132 Z" fill="#8B5E3C"/>
+                <path d="M82 78 C82 62, 198 62, 198 78 L205 127 C205 127, 75 127, 75 127 Z" fill="url(#cc1)" stroke="#5A2D0C" stroke-width="1"/>
+                <path d="M82 78 C82 62, 198 62, 198 78 C198 90, 82 90, 82 78Z" fill="#A07050" opacity="0.4"/>
+                <path d="M100 127 Q98 145, 102 152" stroke="#5A2D0C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M170 127 Q173 140, 170 148" stroke="#5A2D0C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M135 127 Q132 150, 138 165" stroke="#5A2D0C" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <!-- Coffee beans -->
+                <ellipse cx="120" cy="55" rx="8" ry="5" fill="#5A2D0C" opacity="0.3" transform="rotate(-20 120 55)"/>
+                <ellipse cx="165" cy="50" rx="7" ry="4" fill="#5A2D0C" opacity="0.25" transform="rotate(15 165 50)"/>
+                <defs>
+                  <linearGradient id="pc1" x1="140" y1="90" x2="140" y2="195"><stop offset="0%" stop-color="#C4956A"/><stop offset="100%" stop-color="#8B5E3C"/></linearGradient>
+                  <linearGradient id="cc1" x1="140" y1="62" x2="140" y2="127"><stop offset="0%" stop-color="#8B5E3C"/><stop offset="100%" stop-color="#5A2D0C"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Pudim de Café</h3>
+            <p class="product-desc">Para os apaixonados por café! A combinação perfeita do pudim cremoso com o sabor intenso e aromático do café.</p>
+            <div class="product-sizes">
+              <span class="size-tag">500g</span>
+              <span class="size-tag">1,1kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Geladinhos -->
+        <div class="product-card" data-animate="fade-up" data-delay="500">
+          <div class="product-image-wrapper">
+            <div class="product-badge badge-fun">Refrescante</div>
+            <div class="product-image product-img-geladinho">
+              <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="140" cy="140" r="130" fill="#FFF8EC"/>
+                <!-- Geladinho 1 -->
+                <rect x="75" y="55" width="38" height="170" rx="8" fill="url(#g1)" stroke="#C8891E" stroke-width="1.5" transform="rotate(-8 90 140)"/>
+                <rect x="78" y="55" width="32" height="30" rx="6" fill="#D4A04A" opacity="0.3" transform="rotate(-8 90 140)"/>
+                <path d="M80 60 L105 55" stroke="#C8891E" stroke-width="1" opacity="0.3" transform="rotate(-8 90 140)"/>
+                <!-- Geladinho 2 (center) -->
+                <rect x="120" y="45" width="40" height="180" rx="8" fill="url(#g2)" stroke="#C8891E" stroke-width="1.5"/>
+                <rect x="123" y="45" width="34" height="32" rx="6" fill="#D4A04A" opacity="0.3"/>
+                <path d="M126 52 L153 52" stroke="#C8891E" stroke-width="1" opacity="0.3"/>
+                <!-- Geladinho 3 -->
+                <rect x="167" y="55" width="38" height="170" rx="8" fill="url(#g3)" stroke="#C8891E" stroke-width="1.5" transform="rotate(8 185 140)"/>
+                <rect x="170" y="55" width="32" height="30" rx="6" fill="#D4A04A" opacity="0.3" transform="rotate(8 185 140)"/>
+                <!-- Sparkle -->
+                <circle cx="100" cy="110" r="3" fill="#F5D69C" opacity="0.6">
+                  <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="185" cy="100" r="2.5" fill="#F5D69C" opacity="0.5">
+                  <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <defs>
+                  <linearGradient id="g1" x1="94" y1="55" x2="94" y2="225"><stop offset="0%" stop-color="#F5E0A0"/><stop offset="100%" stop-color="#E8C86A"/></linearGradient>
+                  <linearGradient id="g2" x1="140" y1="45" x2="140" y2="225"><stop offset="0%" stop-color="#F5E0A0"/><stop offset="100%" stop-color="#D4A04A"/></linearGradient>
+                  <linearGradient id="g3" x1="186" y1="55" x2="186" y2="225"><stop offset="0%" stop-color="#F5E0A0"/><stop offset="100%" stop-color="#E8C86A"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Geladinhos de Pudim</h3>
+            <p class="product-desc">A versão gelada e prática do nosso pudim! Perfeito para refrescar nos dias quentes, com todo o sabor que você ama.</p>
+            <div class="product-sizes">
+              <span class="size-tag">Unidade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BRANDS ===================== -->
+  <section class="brands" id="brands">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Qualidade Garantida</span>
+        <h2 class="section-title">Ingredientes das <span class="text-gold">Melhores Marcas</span></h2>
+        <p class="section-desc">Trabalhamos apenas com marcas de confiança para garantir o melhor sabor e qualidade em cada pudim</p>
+      </div>
+      <div class="brands-grid" data-animate="fade-up" data-delay="200">
+        <div class="brand-card">
+          <div class="brand-logo-wrapper">
+            <img src="images/logo-cristal.svg" alt="Açúcar Cristal" class="brand-logo">
+          </div>
+          <h4 class="brand-name">Cristal</h4>
+          <p class="brand-desc">Açúcar de qualidade superior para a calda perfeita</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-wrapper">
+            <div class="brand-logo-text brand-italac">italac</div>
+          </div>
+          <h4 class="brand-name">Italac</h4>
+          <p class="brand-desc">Leite condensado e creme de leite que fazem a diferença</p>
+        </div>
+        <div class="brand-card">
+          <div class="brand-logo-wrapper">
+            <div class="brand-logo-text brand-leitebom">Leite Bom</div>
+          </div>
+          <h4 class="brand-name">Leite Bom</h4>
+          <p class="brand-desc">Leite fresco e nutritivo, base do nosso pudim cremoso</p>
+        </div>
+      </div>
+      <div class="brands-badge" data-animate="fade-up" data-delay="400">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span>Todos os nossos ingredientes são cuidadosamente selecionados para garantir o melhor resultado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Valores</span>
+        <h2 class="section-title">Escolha o <span class="text-gold">Seu Pudim</span></h2>
+        <p class="section-desc">Opções para todos os momentos — de um lanche até uma festa</p>
+      </div>
+      <div class="pricing-grid">
+        <!-- Card 1,1kg -->
+        <div class="price-card" data-animate="fade-up" data-delay="100">
+          <div class="price-card-ribbon">Melhor Custo</div>
+          <div class="price-card-header">
+            <h3 class="price-product">Pudim Tradicional ou Café</h3>
+            <span class="price-weight">1,1kg</span>
+          </div>
+          <div class="price-value">
+            <span class="price-currency">R$</span>
+            <span class="price-amount">70</span>
+            <span class="price-cents">,00</span>
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Serve até 10 pessoas
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Ideal para festas e eventos
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Sabor tradicional ou café
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Embalagem especial
+            </li>
+          </ul>
+          <a href="https://api.whatsapp.com/send?phone=5563992166569&text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Pudim%20de%201%2C1kg%20%F0%9F%8D%AE" 
+             class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            Pedir Agora
+          </a>
+        </div>
+
+        <!-- Card 500g -->
+        <div class="price-card" data-animate="fade-up" data-delay="300">
+          <div class="price-card-header">
+            <h3 class="price-product">Pudim Tradicional ou Café</h3>
+            <span class="price-weight">500g</span>
+          </div>
+          <div class="price-value">
+            <span class="price-currency">R$</span>
+            <span class="price-amount">40</span>
+            <span class="price-cents">,00</span>
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Serve até 5 pessoas
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Perfeito para a família
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Sabor tradicional ou café
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Entrega cuidadosa
+            </li>
+          </ul>
+          <a href="https://api.whatsapp.com/send?phone=5563992166569&text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20Pudim%20de%20500g%20%F0%9F%8D%AE" 
+             class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            Pedir Agora
+          </a>
+        </div>
+
+        <!-- Card Geladinho -->
+        <div class="price-card" data-animate="fade-up" data-delay="500">
+          <div class="price-card-header">
+            <h3 class="price-product">Geladinho de Pudim</h3>
+            <span class="price-weight">Unidade</span>
+          </div>
+          <div class="price-value">
+            <span class="price-currency">R$</span>
+            <span class="price-amount">10</span>
+            <span class="price-cents">,00</span>
+          </div>
+          <ul class="price-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Porção individual
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Refrescante e prático
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Sabor de pudim cremoso
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Compre vários e economize
+            </li>
+          </ul>
+          <a href="https://api.whatsapp.com/send?phone=5563992166569&text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Geladinhos%20de%20Pudim%20%F0%9F%A7%8A" 
+             class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            Pedir Agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA / ORDER ===================== -->
+  <section class="cta-section" id="order">
+    <div class="cta-bg-pattern"></div>
+    <div class="container">
+      <div class="cta-content" data-animate="fade-up">
+        <div class="cta-icon">🍮</div>
+        <h2 class="cta-title">Pronto para experimentar o <span class="text-gold">melhor pudim</span> da cidade?</h2>
+        <p class="cta-desc">Faça seu pedido agora pelo WhatsApp e receba com todo carinho!</p>
+        <a href="https://api.whatsapp.com/send?phone=5563992166569&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20de%20Pudim%20da%20Cleo%20%F0%9F%8D%AE" 
+           class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+            <path d="M16.01 2.93A13.07 13.07 0 002.93 16a13 13 0 001.75 6.57l-1.75 6.5 6.7-1.75A13 13 0 0016 29.07 13.07 13.07 0 0016.01 2.93zm7.6 18.46c-.32.9-1.87 1.72-2.58 1.83-.66.1-1.5.14-2.42-.15a22.1 22.1 0 01-2.2-.81c-3.86-1.67-6.39-5.58-6.58-5.84-.2-.26-1.58-2.1-1.58-4.02 0-1.91 1-2.86 1.35-3.25.36-.4.78-.5 1.04-.5.26 0 .52 0 .75.01.24.01.56-.09.88.67.32.78 1.1 2.68 1.2 2.88.1.2.16.43.03.69-.13.26-.2.42-.4.65-.19.23-.41.5-.58.68-.2.2-.4.41-.17.81.23.4 1.03 1.7 2.22 2.75 1.52 1.35 2.8 1.77 3.2 1.97.4.2.63.17.87-.1.23-.26 1-1.17 1.27-1.57.27-.4.53-.33.9-.2.36.14 2.3 1.09 2.7 1.28.4.2.66.3.76.46.1.17.1.96-.22 1.86z"/>
+          </svg>
+          Pedir pelo WhatsApp
+        </a>
+        <p class="cta-phone">Ou ligue: <strong>(63) 99216-6569</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="images/logo-pudim.webp" alt="Pudim da Cleo" class="footer-logo">
+          <p class="footer-tagline">Feito com amor e tradição</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#products">Produtos</a>
+          <a href="#pricing">Preços</a>
+          <a href="#order">Pedir</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Pudim da Cleo. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=5563992166569&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%8D%AE" 
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor">
+      <path d="M16.01 2.93A13.07 13.07 0 002.93 16a13 13 0 001.75 6.57l-1.75 6.5 6.7-1.75A13 13 0 0016 29.07 13.07 13.07 0 0016.01 2.93zm7.6 18.46c-.32.9-1.87 1.72-2.58 1.83-.66.1-1.5.14-2.42-.15a22.1 22.1 0 01-2.2-.81c-3.86-1.67-6.39-5.58-6.58-5.84-.2-.26-1.58-2.1-1.58-4.02 0-1.91 1-2.86 1.35-3.25.36-.4.78-.5 1.04-.5.26 0 .52 0 .75.01.24.01.56-.09.88.67.32.78 1.1 2.68 1.2 2.88.1.2.16.43.03.69-.13.26-.2.42-.4.65-.19.23-.41.5-.58.68-.2.2-.4.41-.17.81.23.4 1.03 1.7 2.22 2.75 1.52 1.35 2.8 1.77 3.2 1.97.4.2.63.17.87-.1.23-.26 1-1.17 1.27-1.57.27-.4.53-.33.9-.2.36.14 2.3 1.09 2.7 1.28.4.2.66.3.76.46.1.17.1.96-.22 1.86z"/>
+    </svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
