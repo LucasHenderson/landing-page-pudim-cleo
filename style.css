@@ -546,8 +546,24 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease); }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+}
+
+.section-zero-lactose {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--gold-dark);
+  background: rgba(200, 137, 30, 0.08);
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.section-zero-lactose strong {
+  color: var(--gold);
+  font-weight: 700;
 }
 
 .product-card {
@@ -1000,10 +1016,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease); }
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .products-grid .product-card:last-child {
-    grid-column: 1 / -1;
-    max-width: 420px;
-    margin: 0 auto;
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1125,7 +1139,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease); }
 
   /* WhatsApp at bottom */
   .mobile-sidebar-footer {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
     padding: 12px 24px 28px;
     margin-top: auto;
   }
@@ -1142,6 +1157,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease); }
     color: var(--whatsapp-dark);
     font-weight: 600;
     font-size: 0.95rem;
+    white-space: nowrap;
     transition: all 0.25s var(--ease);
   }
 
@@ -1162,8 +1178,6 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease); }
     grid-template-columns: 1fr;
     gap: 24px;
   }
-
-  .products-grid .product-card:last-child { max-width: 100%; }
 
   .product-photo { height: 240px; }
 
